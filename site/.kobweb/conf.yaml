@@ -1,0 +1,14 @@
+site:
+  title: "Empty3"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/empty3.js"
+      api: "build/libs/empty3.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/empty3.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
